@@ -4,6 +4,8 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 // console.log(axiosPixabay)
 // import * as axiosPixabay from './js/axiosPixabay'
 // console.log(axiosPixabay)
+import axios from 'axios';
+
 import ImageApiService from './js/axiosPixabay';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -87,6 +89,7 @@ function createImageEl(hits) {
         console.log(error.message);
         }
     }
+    
     async function onLoadMoreClick(e) {
         e.preventDefault();
         const response = await imageApiService.fetchPhotos();

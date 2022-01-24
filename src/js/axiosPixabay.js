@@ -1,4 +1,3 @@
-// import axios from 'axios';
 
 const axios = require('axios');
 const API_KEY = '25313098-4fe256b98efcc708221cd816f';
